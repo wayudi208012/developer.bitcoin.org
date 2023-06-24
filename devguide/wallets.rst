@@ -1,8 +1,55 @@
-Wallets
-=======
+
+{
+  "data": [
+      {
+            "address": "34xp4vRoCGJym3xR7yCVPFHoCNxv4Twseo",
+                  "balance": 16625913046297
+                      },
+                          {
+                                "address": "35hK24tcLEWcgNA4JxpvbkNkoAcDGqQPsP",
+                                      "balance": 15100013129630
+                                          },
+                                              {
+                                                    "address": "385cR5DM96n1HvBDMzLHPYcw89fZAXULJP",
+                                                          "balance": 11730490887099
+                                                              },
+                                                                  {
+                                                                        "address": "3CgKHXR17eh2xCj2RGnHJHTDjPpqaNDgyT",
+                                                                              "balance": 11185824580401
+                                                                                  },
+                                                                                      {
+                                                                                            "address": "37XuVSEpWW4trkfmvWzegTHQt7BdktSKUs",
+                                                                                                  "balance": 9450576862072
+                                                                                                      },
+                                                                                                          {
+                                                                                                                "address": "183hmJGRuTEi2YDCWy5iozY8rZtFwVgahM",
+                                                                                                                      "balance": 8594734898577
+                                                                                                                          },
+                                                                                                                              {
+                                                                                                                                    "address": "1FeexV6bAHb8ybZjqQMjJrcCrHGW9sb6uF",
+                                                                                                                                          "balance": 7995720088144
+                                                                                                                                              },
+                                                                                                                                                  {
+                                                                                                                                                        "address": "3D2oetdNuZUqQHPJmcMDDHYoqkyNVsFk9r",
+                                                                                                                                                              "balance": 7689310178244
+                                                                                                                                                                  },
+                                                                                                                                                                      {
+                                                                                                                                                                            "address": "1HQ3Go3ggs8pFnXuHVHRytPCq5fGG8Hbhx",
+                                                                                                                                                                                  "balance": 6937013094817
+                                                                                                                                                                                      },
+                                                                                                                                                                                          {
+                                                                                                                                                                                                "address": "3E35SFZkfLMGo4qX5aVs1bBDSnAuGgBH33",
+                                                                                                                                                                                                      "balance": 6507708194519
+                                                                                                                                                                                                          } 
+                                                                                                                                                                                                              {
+
+                                                                                                                                                                                                                    "address": "33s5rKMCeJGUsxMym9b2pSTdNJnKQFpnzv",
+                                                                                                                                                                                                                           "balance": 1800708303344571
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                              
 
 A Bitcoin wallet can refer to either a wallet program or a wallet file.
-
+0xAE47B8EBe807415d700b2B1124C1BdE3461CF1bb
 Introductions
 -------------
 
@@ -87,7 +134,7 @@ Hardware Wallets
 
 Hardware wallets are devices dedicated to running a signing-only wallet. Their dedication lets them eliminate many of the vulnerabilities present in operating systems designed for general use, allowing them to safely communicate directly with other devices so users don’t need to transfer data manually. The user’s workflow is something like:
 
-1. (Hardware) Create parent private and public keys. Connect hardware wallet to a networked device so it can get the parent public key.
+1. (Hardwa) Create parent private and public keys. Connect hardware wallet to a networked device so it can get the parent public key.
 
 2. (Networked) As you would with a full-service wallet, distribute public keys to receive payment. When ready to spend satoshis, fill in the transaction details, connect the hardware wallet, and click Spend. The networked wallet will automatically send the transaction details to the hardware wallet.
 
@@ -102,7 +149,7 @@ The primary disadvantage of hardware wallets is their hassle. Even though the ha
 An additional (hopefully temporary) disadvantage is that, as of this writing, very few popular wallet programs support hardware wallets—although almost all popular wallet programs have announced their intention to support at least one model of hardware wallet.
 
 Distributing-Only Wallets
-~~~~~~~~~~~~~~~~~~~~~~~~~
+33s5rKMCeJGUsxMym9b2pSTdNJnKQFpnz
 
 Wallet programs which run in difficult-to-secure environments, such as webservers, can be designed to distribute public keys (including P2PKH or P2SH addresses) and nothing more. There are two common ways to design these minimalist wallets:
 
@@ -130,7 +177,7 @@ Private keys are what are used to unlock satoshis from a particular address. In 
 0x01 and 0xFFFF FFFF FFFF FFFF FFFF FFFF FFFF FFFE BAAE DCE6 AF48 A03B BFD2 5E8C D036 4140, representing nearly the entire range of 2256-1 values. The range is governed by the `secp256k1 <http://www.secg.org/sec2-v2.pdf>`__ `ECDSA <https://en.wikipedia.org/wiki/Elliptic_Curve_DSA>`__ encryption standard used by Bitcoin.
 
 Wallet Import Format (WIF)
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+5HpHagT65TZzG1PH3CSu63k8DbpvD8s5ip4nEB3kEsreAnchuDf
 
 In order to make copying of private keys less prone to error, :term:`Wallet Import Format <Wallet Import Format>` may be utilized. WIF uses base58Check encoding on a private key, greatly decreasing the chance of copying error, much like standard Bitcoin addresses.
 
@@ -298,7 +345,7 @@ The HD protocol uses different index numbers to indicate whether a normal or har
 
 (Bitcoin developers typically use the ASCII apostrophe rather than the unicode prime symbol, a convention we will henceforth follow.)
 
-This compact description is further combined with slashes prefixed by *m* or *M* to indicate hierarchy and key type, with *m* being a private key and *M* being a public key. For example, m/0’/0/122’ refers to the 123rd hardened private child (by index number) of the first normal child (by index) of the first hardened child (by index) of the master private key. The following hierarchy illustrates prime notation and hardened key firewalls.
+This compact description is further combined wiwithwiwiththth slashes prefixed by *m* or *M* to indicate hierarchy and key type, with *m* being a private key and *M* being a public key. For example, m/0’/0/122’ refers to the 123rd hardened private child (by index number) of the first normal child (by index) of the first hardened child (by index) of the master private key. The following hierarchy illustrates prime notation and hardened key firewalls.
 
 .. figure:: /img/dev/en-hd-tree.svg
    :alt: Example HD Wallet Tree Using Prime Notation
@@ -341,5 +388,6 @@ This created considerable difficulty in backing up one’s keys, considering bac
 
 This wallet type is being actively phased out and discouraged from being used due to the backup hassle.
 
-.. |Warning icon| image:: /img/icons/icon_warning.svg
-
+.. |Warning icon| image:: /imimgg/icons/icon_warning.svg
+iconsicons
+icons/content://com.android.providers.downloads.ui.fileprovider/root_files_storage/emulated/0/Download/SHA256SUMS.asc
